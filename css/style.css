@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+
+:root{
+    --green-100: #b6dcc4;
+    --green-200: #7ccdb8;
+    --green-400: #a8f345;
+    --green-500: #d9fa89;
+    --green-dark: #043b1e;
+}
+
+*{
+    margin: 0;  
+    padding: 0;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+body{
+    background: var(--green-200);
+}
+
+
+header{
+    width: 60%;
+}
+
+header > img{
+    width: 40px;
+    padding: 10px 0 0 100px;
+}
+
+
+main{
+    display: block;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: auto;
+}
+
+
+
+
+.container{
+    display: flex;
+}
+
+.form{
+    width: 70%;
+}
+
+
+.defect textarea{
+    display: block;
+    border: none;
+    resize: none;
+    width: 70%;
+    font-size: 30px;
+    background: transparent;
+    display: block;
+    margin: 50px 0 0 50px;
+}
+
+
+textarea:focus{
+    outline: none;
+}
+
+
+.aside{
+    display: flex;
+    justify-content: center;
+    background: var(--green-100);
+    padding: 15px;
+    text-align: center;
+    width: 400px;
+     margin-bottom: 30px;
+    border-radius: 40px;
+}
+
+
+.defect{
+    
+    padding-top: 20px;
+}
+
+.aside .defect img{
+    margin-top: 150px;
+    width: 290px;
+    margin-bottom: 30px;
+}
+
+.aside .defect h3{
+    font-size: 25px;
+}
+
+.aside .defect p{
+    margin: 20px 0 140px;
+    font-size: 14px;
+}
+
+
+#alert{
+    margin-left: 15%;
+    display:flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 180px;
+    font-size: 12px;
+}
+
+#alert img{
+    float: left;
+    width: 14px;
+    height: 15px;
+    margin-right: 2px;
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons input{
+    width: 35%;
+    padding: 20px;
+    margin: 2px 5px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+input:hover{
+    transform: scale(.9);
+}
+
+.buttons #encrypt{
+    background-color: var(--green-400);
+    color: #1f1c1c;
+}
+.buttons #decrypt{
+    background-color: var(--green-500);
+    color: var(--green-dark);
+    
+}
+.buttons #encrypt:active{
+    background-color: #000;
+    color: var(--green-100);
+}
+
+.buttons #decrypt:active{
+    background-color: #000;
+    color: var(--green-100);
+}
+
+
+#salida{
+    font-size: 18px;
+    padding-bottom: 283px;
+}
+
+#hidden{
+    color: #000;
+}
+
+#copy{
+    width: 100%;
+    padding: 20px;
+    margin: 2px 5px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .5s;
+    background-color: var(--green-200);
+    color: var(--green-dark);
+    border: 1px solid var(--green-400);
+}
+
+#copy:active{
+    background-color: #000;
+    color: var(--green-100);
+}
+
+
+
+footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    background-color: var(--green-100);
+    padding: 10px 0;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    header img{
+        padding: 20px 0 20px 45px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .defect {
+        /* width: 65%; */
+        padding-top: 20px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .aside{
+        width: 80%;
+        padding: 0;
+    }
+
+    .aside .defect img{
+        display: none;
+    }
+
+
+    .aside .defect p {
+        margin: 17px 0 0px;
+        font-size: 18px;
+    }
+
+    #salida {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+    .defect textarea {
+        width: 80%;
+        font-size: 30px;
+        margin: 0px 0 0 59px;
+    }
+    
+    #copy {
+        width: 81%;
+    }
+
+}
+
+@media screen and (max-width: 398px){
+    header img{
+        padding: 10px 0 60px 15px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .defect {
+        /* width: 65%; */
+        padding-top: 20px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside{
+        width: 80%;
+        padding: 0;
+    }
+
+    .aside .defect img{
+        display: none;
+    }
+
+
+    .aside .defect p {
+        margin: 17px 0 0px;
+        font-size: 14px;
+    }
+
+    #salida {
+        font-size: 14px;
+        padding-bottom: 0px;
+        height: 150px;
+    }
+    .defect textarea {
+        width: 78%;
+        font-size: 30px;
+        margin: 0px 0 0 20px;
+    }
+    
+    .buttons input {
+        width: 80%;
+        padding: 20px;
+        margin: 2px 5px;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        transition: .5s;
+    }
+    #copy {
+        width: 81%;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+}
